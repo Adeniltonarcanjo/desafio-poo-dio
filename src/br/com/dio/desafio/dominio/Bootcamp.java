@@ -19,6 +19,10 @@ public class Bootcamp {
         return name;
     }
 
+    public Bootcamp() {
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }

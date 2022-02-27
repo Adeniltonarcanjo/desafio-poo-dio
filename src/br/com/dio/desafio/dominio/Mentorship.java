@@ -12,7 +12,10 @@ public class Mentorship extends Content {
         return XP_PATTERN + 20d;
     }
 
+
+
     public Mentorship() {
+
     }
 
     public LocalDate getDate() {

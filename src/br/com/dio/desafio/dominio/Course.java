@@ -4,11 +4,14 @@ public class Course extends Content {
 
     private int workload;
 
-    public Course(){}
+    public Course() {
+
+    }
+
 
     @Override
     public double calculateXp() {
-        return XP_PATTERN*workload;
+        return XP_PATTERN * workload;
     }
 
     public int getWorkload() {
@@ -24,7 +27,7 @@ public class Course extends Content {
         return "Curse{" +
                 "Title='" + getTitle() + '\'' +
                 ", Description='" + getDescription() + '\'' +
-                ", cargaWorkload=" + workload+
+                ", cargaWorkload=" + workload +
                 '}';
     }
 }

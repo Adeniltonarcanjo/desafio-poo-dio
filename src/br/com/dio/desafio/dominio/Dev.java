@@ -12,6 +12,9 @@ public class Dev {
     private Set<Content> subscribedContents = new LinkedHashSet<>();
     private Set<Content> completedContents = new LinkedHashSet<>();
 
+    public Dev() {
+
+    }
 
     public void registerBootcamp(Bootcamp bootcamp){
         this.subscribedContents.addAll(bootcamp.getContents());
@@ -19,7 +22,7 @@ public class Dev {
     }
 
 
-    public void TtoProgress() {
+    public void toProgress() {
         Optional<Content> contents = this.subscribedContents.stream().findFirst();
         if(contents.isPresent()) {
             this.completedContents.add(contents.get());

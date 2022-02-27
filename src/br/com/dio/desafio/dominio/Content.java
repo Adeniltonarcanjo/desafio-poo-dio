@@ -8,6 +8,8 @@ public abstract class Content {
 
     public abstract double calculateXp();
 
+
+
     public String getTitle() {
         return title;
     }
